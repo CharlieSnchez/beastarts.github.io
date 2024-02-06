@@ -225,9 +225,8 @@ ul{
 {
   position: relative;
   width: 100px;
-  height:70px;
+  height:45px;
   z-index: 10;
-  padding:10px 
 }
 .swiper-pagination{
   width:100px;
@@ -241,7 +240,7 @@ ul{
   transform: translate(-50%, -50%);
 }
 .slider-control-image{
-  height:50px;
+  height:20px;
 }
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
   background: rgb(245, 245, 245);
@@ -264,6 +263,7 @@ ul{
   font-weight: 100;
   mix-blend-mode:difference;
   color: white;
+  line-height: 0.8em;
 }
 
 .img-container.one .slide-text{
@@ -538,7 +538,7 @@ z-index: 2;
   font-size: 18px;
   font-weight: 200;
   font-family: brook;
-  margin-top: -10px;
+  margin-top: -0.7em;
   opacity: .9;
   padding: 0;
 }
@@ -866,7 +866,7 @@ z-index: 2;
 FOR MOBILES
 
 */
-@media all and (max-width: 576px) and (min-width: 375px){
+@media all and (max-width: 740px) and (min-width: 540px){
 .navigation{
   font-size: 14px;
   padding-top:20px;
@@ -997,7 +997,7 @@ FOR EXTRA SMALL DEVICES
 */
 
 
-@media all and (max-width: 375px) and (min-width: 0px){
+@media all and (max-width: 540px) and (min-width: 0px){
   .navigation{
     font-size: 14px;
     padding-top:20px;
@@ -1030,7 +1030,7 @@ FOR EXTRA SMALL DEVICES
     flex-direction: row;
   }
   .slide-text{
-    font-size: 70px;
+    font-size: 50px;
   }
   #home .social-media-links{
   display: none;
@@ -1150,7 +1150,7 @@ input{
 FOR TABLETS
 */
 
-@media all and (max-width: 991px) and (min-width: 576px){
+@media all and (max-width: 991px) and (min-width: 740px){
   .cursor,.cursor-two{
     display: none;
   }
