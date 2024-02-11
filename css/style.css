@@ -532,8 +532,11 @@ z-index: 2;
   -webkit-backdrop-filter: blur(7px);
   backdrop-filter: blur(7px);
   pointer-events: none;
-  font-weight: 900;
+  font-weight: 100;
   z-index: 5;
+  mix-blend-mode:difference;
+  color: white;
+  line-height: 0.8em;
 }
 .view-project{
   font-size: 18px;
