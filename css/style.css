@@ -42,6 +42,7 @@ html{
   height: 100vh;
   position: relative;
   overflow: hidden;
+  cursor: none;
 }
 
 .parallax-slider .swiper-slide {
@@ -81,7 +82,7 @@ html{
   position: relative;
   left:auto;
   right:auto;
-  cursor: pointer;
+  cursor: none;
 }
 .slider-controls{
   background: rgb(0,0,0,.4);
@@ -389,7 +390,7 @@ mix-blend-mode: luminosity;
 .navigation-close{
   padding: 20px;
   padding-top: 0px;
-  cursor: pointer;
+  cursor: none;
 }
 .navigation-close-line:nth-child(2){
   transform: rotate(45deg);
@@ -470,13 +471,13 @@ mix-blend-mode: luminosity;
   bottom:5%;
   width: auto;
   height: auto;
-  cursor: pointer;
+  cursor: none;
 }
 .hover{
-  cursor: pointer;
+  cursor: none;
 }
 .imgs{
-  cursor: pointer;
+  cursor: none;
   height: 26px;
   width: 26px;
   transition: all .4s ease;
@@ -696,7 +697,7 @@ form{
   font-size: 18px;
   margin: 20px;
   font-family: brook;
-  cursor: pointer;
+  cursor: none;
   transition: all .4s ease;
   position: relative;
   overflow: hidden;
