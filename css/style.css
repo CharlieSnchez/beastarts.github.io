@@ -48,6 +48,8 @@ html{
 .parallax-slider .swiper-slide {
   position: relative;
   overflow: hidden;
+  cursor: none;
+
 }
 
 .parallax-slider .img-container {
@@ -161,6 +163,7 @@ html{
   letter-spacing: 1px;
   border-radius: 4px;
 }
+
 .navigation-links{
   float: right;
   padding: 10px;
@@ -202,7 +205,7 @@ li{
   overflow: hidden;
   font-family: brook;
   text-align: center;
-  color:black;
+  color:rgb(255, 255, 255);
   font-size: 16px;
 }
 .cursor-two{
@@ -217,6 +220,7 @@ li{
   top: -4px;
   left: -4px;
   transition: all .05s ease;
+  color:rgb(255, 255, 255);
 }
 ul{
   display: flex;
@@ -360,7 +364,7 @@ mix-blend-mode: luminosity;
   width: 100%;
   z-index: 11;
   transform: translateY(-100%);
-  animation: breaker 2.5s ;
+  animation: breaker 2s ;
 }
 
 @keyframes breaker{
@@ -392,6 +396,13 @@ mix-blend-mode: luminosity;
   padding-top: 0px;
   cursor: none;
 }
+.logo-centered{
+  position: fixed;
+  width: 2% !important;
+  left: 50%;
+  mix-blend-mode: difference !important;
+  color: white;
+}
 .navigation-close-line:nth-child(2){
   transform: rotate(45deg);
 }
@@ -406,8 +417,10 @@ mix-blend-mode: luminosity;
   margin: 20px;
   position: relative;
   z-index: 5;
-  color: rgb(245, 245, 245);
   font-family: poppins;
+  mix-blend-mode: difference;
+  color: #ffffff;
+
 }
 .about-text-header{
   font-size: 28px;
@@ -511,6 +524,8 @@ z-index: 2;
   padding:100px;
   padding-left: 150px;
   padding-right: 150px;
+  cursor: none;
+
 }
 .marine-project,.forest-project,.wildlife-project,.city-project,.video-project{
   display: none;
@@ -1142,6 +1157,7 @@ input{
   pointer-events: none;
   border-radius: 6px;
 }
+
 .gg-mouse {
 
   display:none;

@@ -16,6 +16,8 @@ $(window).on('load',function(){
   $(function(){
 //slideshow
 
+document.body.style.cursor = 'none';
+
 new Swiper('#projects .swiper-container', {
   slidesPerView: 'auto',
   speed: 1000,
@@ -131,9 +133,9 @@ new Swiper('#projects .swiper-container', {
             gsap.to( $cursor,{
               scale:1.5,
               opacity:1,
-              background:'rgb(245,245,245)',
+              background:'rgb(255,255,255)',
               border:'none',
-              innerHTML:'view <br> project'
+              //innerHTML:"<img src='/images/bird_eye.gif' width='72' height='48' right='1200'>"
              })
              gsap.to( $cursortwo,{
               scale:0,
@@ -146,7 +148,7 @@ new Swiper('#projects .swiper-container', {
               opacity:1,
               background:'transparent',
               border:'1px solid rgb(235,235,235)',
-              innerHTML:''
+              innerHTML: '',
              }) 
              gsap.to( $cursortwo,{
               scale:1,
