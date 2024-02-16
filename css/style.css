@@ -398,7 +398,7 @@ mix-blend-mode: luminosity;
 }
 .logo-centered{
   position: fixed;
-  width: 2% !important;
+  max-height: 2% !important;
   left: 50%;
   mix-blend-mode: difference !important;
   color: white;
