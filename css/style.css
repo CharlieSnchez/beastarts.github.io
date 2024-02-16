@@ -272,7 +272,7 @@ ul{
 }
 
 .img-container.one .slide-text{
-  color: red;
+  color: rgb(153, 0, 0);
 }
 
 .img-container.two .slide-text{
@@ -280,7 +280,7 @@ ul{
 }
 
 .img-container.three .slide-text{
-  color: rgb(255, 166, 0);
+  color: rgb(0, 145, 170);
 }
 
 .img-container.four .slide-text{
@@ -364,7 +364,7 @@ mix-blend-mode: luminosity;
   width: 100%;
   z-index: 11;
   transform: translateY(-100%);
-  animation: breaker 2s ;
+  animation: breaker 2.5s ;
 }
 
 @keyframes breaker{
@@ -379,7 +379,7 @@ mix-blend-mode: luminosity;
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(../images/about-pic.webp);
+  background: url(../images/urbex-photography.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -397,11 +397,14 @@ mix-blend-mode: luminosity;
   cursor: none;
 }
 .logo-centered{
+  display: flex;
   position: fixed;
-  max-height: 2% !important;
+  align-items: center;
+  justify-content: center;
   left: 50%;
+  margin-top: -3vh;
+  width: 2% !important;
   mix-blend-mode: difference !important;
-  color: white;
 }
 .navigation-close-line:nth-child(2){
   transform: rotate(45deg);
@@ -417,7 +420,6 @@ mix-blend-mode: luminosity;
   margin: 20px;
   position: relative;
   z-index: 5;
-  font-family: poppins;
   mix-blend-mode: difference;
   color: #ffffff;
 
@@ -425,6 +427,8 @@ mix-blend-mode: luminosity;
 .about-text-header{
   font-size: 28px;
   padding-bottom: 30px;
+  font-family: brook;
+
 }
 .about-text-button{
   padding-top: 20px;
@@ -554,12 +558,13 @@ z-index: 2;
   line-height: 0.8em;
 }
 .view-project{
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 200;
   font-family: brook;
   margin-top: -0.7em;
   opacity: .9;
   padding: 0;
+  color: rgb(49, 49, 49);
 }
 .pace {
   pointer-events: none;
@@ -887,21 +892,28 @@ FOR MOBILES
 */
 @media all and (max-width: 740px) and (min-width: 540px){
 .navigation{
-  font-size: 14px;
+  font-size: 16px;/*
   padding-top:20px;
   padding-left: 20px;
-  padding-left: 10px;
+  padding-left: 10px;*/
 }
+
 .cursor,.cursor-two{
   display: none;
 }
-.navigation-links{
+.navigation-links{/*
   padding-right: 0px;
-  padding-left: 0px;
+  padding-left: 0px;*/
+  
+  margin-top: 30px;
 }
 .logo{
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 0px;
+  margin-top: 30px;
+}
+.logo-centered{
+  margin-top: -60px !important;
 }
 .project-link{
   padding:40px;
@@ -910,7 +922,7 @@ FOR MOBILES
 }
 .slider-controls{
   position: absolute;
-  right:15%;
+  right:37.5%;
   bottom:10%;
   height: auto;
   width: auto;
@@ -1041,7 +1053,7 @@ FOR EXTRA SMALL DEVICES
   }
   .slider-controls{
     position: absolute;
-    right:15%;
+    right:32.5%;
     bottom:10%;
     height: auto;
     width: auto;
@@ -1178,7 +1190,7 @@ FOR TABLETS
   display: none;
 }
 #about{
-  background: url(../images/about-pic.webp);
+  background: url(../images/urbex-photography.jpg);
   background-position: center;
   background-size: cover;
 }
