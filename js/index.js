@@ -1,4 +1,9 @@
 //loader
+
+window.addEventListener("beforeunload", function(event) {
+  reload();
+});
+
 paceOptions = {
   ajax: true,
   document: true,
@@ -231,8 +236,8 @@ new Swiper('#projects .swiper-container', {
     $('.marine-project-link').on('click',function(){
       gsap.to('#home',.5,{scale:.9});
       gsap.to('#home',0,{width:'100%',height:'100vh',overflow:'hidden'});
-      gsap.to('#home',0,{display:'none',delay:.7});
-      gsap.to('.marine-project',0,{display:'block',delay:.7})
+      gsap.to('#home',0,{display:'none',delay:.5});
+      gsap.to('.marine-project',0,{display:'block',delay:.5})
       gsap.to('.marine-project',.5,{scale:1,delay:1.1})
       gsap.to('.project-name',.5,{opacity:0,delay:2.5})
       gsap.to('#breaker',{display:'block'})
@@ -330,5 +335,35 @@ new Swiper('#projects .swiper-container', {
    })
   })
 
- 
+})
+
+// CONTROL YOUTUBE VIDEOS
+
+function controlVideo() {
+  console.log(document.getElementById("youtube-video"));
+  document.getElementById("youtube-video").contentWindow.postMessage('{"event":"command", "func":"pauseVideo", "args":""}', '*');
+}
+
+function stopVideo(element) {
+  // getting every iframe from the body
+  var iframes = element.querySelectorAll('iframe');
+  setTimeout(() => {
+  // reinitializing the values of the src attribute of every iframe to stop the YouTube video.
+  for (let i = 0; i < iframes.length; i++) {
+    if (iframes[i] !== null) {
+       var temp = iframes[i].src;
+       iframes[i].src = temp;
+    }
+ }  }, 500);
+
+};
+
+$(".youtube-video").on("mouseenter", function(){
+  $("#my-cursor").not(this).css("visibility","hidden");
+  $("#my-cursor-center").not(this).css("visibility","hidden");
+
+})
+$(".youtube-video").on("mouseleave", function(){
+  $("#my-cursor").css("visibility","visible");
+  $("#my-cursor-center").css("visibility","visible");
 })

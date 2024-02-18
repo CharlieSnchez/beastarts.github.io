@@ -24,8 +24,8 @@
 
 <div id="breaker"></div>
 
-      <div class="cursor scale"></div>
-      <div class="cursor-two  scale"></div>
+      <div id="my-cursor" class="cursor scale"></div>
+      <div id="my-cursor-center" class="cursor-two  scale"></div>
       <!-- HOME -->
       <div id="home">
     
@@ -34,18 +34,18 @@
           <div class="logo home-link fade-down">
            <a href="#">BEAST ARTS</a>
           </div>
-
-          <div class="logo logo-centered home-link fade-down">
-            <img src="images/favicon-white-mini.png">
-          </div>
         
           <div class="navigation-links">
             <ul>
-              <li class="links about-link fade-down"><a href="#0">About</a></li>
-              <li class="links contact-link fade-down"><a href="#0">Contact</a></li>
+              <li class="links about-link fade-down"><a href="#about">About</a></li>
+              <li class="links contact-link fade-down"><a href="#contact">Contact</a></li>
             </ul>
           </div>
         
+        </div>
+
+        <div class="logo-centered home-link fade-down">
+          <img src="images/favicon-white-mini.png"></a>
         </div>
 
               <div class="slider">
@@ -76,7 +76,7 @@
                             <!-- VIDEO -->
 
                             <div class="slide-text opacity">
-                              <a href="#tentacion" class="project-link marine-project-link">TENTACIÓN
+                              <a class="project-link marine-project-link">TENTACIÓN
                                 <div class="view-project">LUDOCLIP</div>
                               </a>
                             </div>
@@ -104,7 +104,7 @@
                               <!-- VIDEO -->
 
                               <div class="slide-text opacity">
-                                <a href="#oasis" class="project-link forest-project-link">OASIS
+                                <a class="project-link forest-project-link">OASIS
                                   <div class="view-project">SHORT FILM</div>
                                 </a>
                               </div>
@@ -131,7 +131,7 @@
                                           -->
                               <!-- VIDEO -->
                               <div class="slide-text opacity">
-                                <a href="#a-medias-verdades" class="project-link wildlife-project-link">A MEDIAS VERDADES 
+                                <a class="project-link wildlife-project-link">A MEDIAS VERDADES 
                                   <div class="view-project">GAMIFICATION PROJECT</div>
 
                                 </a>
@@ -159,7 +159,7 @@
                                           -->
                               <!-- VIDEO -->
                               <div class="slide-text opacity">
-                                <a href="#299 " class="project-link city-project-link">299
+                                <a class="project-link city-project-link">299
                                   <div class="view-project">SHORT FILM</div>
 
                                 </a>
@@ -196,8 +196,8 @@
               </div>
               <div class="social-media-links">
                 <ul>
-                  <li class="fade-up"> <a href="#">IN</a> </li>
-                  <li class="fade-up"><a href="#" onclick="https://twitter.com/BeastArtsTV">X</a></li>
+                  <li class="socialnetwork-icon fade-up"> <a href="https://www.instagram.com/beastartstv"><img src="images/instagram-white-icon.webp" style="width:30px;height:auto;cursor:none;" alt="IG-image"></a></li>
+                  <!--- <li class="fade-up"><a href="#" onclick="https://twitter.com/BeastArtsTV">X</a></li> --->
                 </ul>
               </div>
             </div>
@@ -210,7 +210,7 @@
 <div class="navigation navigation-about">
         
   <div class="logo home-link about-opacity">
-   <a href="#"> BEAST ARTS</a>
+   <a href="#">BEAST ARTS</a>
   </div>
 
   <div class="navigation-links about-opacity">
@@ -269,8 +269,8 @@
     </div>
   <div class="social-media-links about-opacity">
     <ul>
-      <li> <a href="#">IN</a> </li>
-      <li> <a href="#">X</a> </li>
+      <li class="socialnetwork-icon fade-up"> <a href="https://www.instagram.com/beastartstv"><img src="images/instagram-white-icon.webp" style="width:30px;height:auto;cursor:none;" alt="IG-image"></a></li>
+      <!--- <li> <a href="#">X</a> </li> --->
     </ul>
   </div>
 </div>
@@ -288,7 +288,7 @@
               <a href="#">DIRECTED BY CHARLIE SÁNCHEZ</a>
             </div>
       
-            <div class="navigation-links about-opacity">
+            <div id="mute-link" class="navigation-links about-opacity">
               <div class="navigation-close hover marine-close">
                 <div class="navigation-close-line"></div>
                 <div class="navigation-close-line"></div>
@@ -365,9 +365,9 @@
      <a href="#">CODIRECTED BY CHARLIE SÁNCHEZ, DANIEL MEDINA & MIGUEL PEDREGOSA</a>
     </div>
   
-    <div class="navigation-links about-opacity">
-     <div class="navigation-close hover forest-close">
-       <div class="navigation-close-line"></div>
+    <div id="mute-link" class="navigation-links about-opacity">
+     <div class="navigation-close hover forest-close" onClick="stopVideo(body);">
+       <div class="navigation-close-line" ></div>
        <div class="navigation-close-line"></div>
      </div>
     </div>
@@ -376,7 +376,11 @@
   <div class="col-12 p-0 m-0">
  <div class="slideshow">
    <div class="forest-slides">
-     <img src="images/header-image-two.webp" alt="marine-image">
+    <iframe id="youtube-video" class="youtube-video" width="1280" height="720" src="https://www.youtube.com/embed/z5zMaLbLvhU?si=uiLHFM9StnXA_M1s?
+    enablejsapi=1&
+    autoplay=0&
+    rel=0&
+    mute=0" style="z-index: 20;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
    </div>
    <div class="forest-slides">
      <img src="images/forest-image-two.webp" alt="marine-image">
@@ -392,6 +396,28 @@
    </div>
  </div>
 
+ <div class="col-12 col-md-12 col-lg-6 col-sm-12 col-xs-12 p-0 m-0">
+  <div class="about-text">
+    <div class="about-text-container about-opacity">
+      <div class="about-text-header">
+        OASIS, our first short film
+      </div>
+      <div class="about-text-paragraph">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex debitis, nisi minima tempore repudiandae.
+      </div>
+      <div class="about-text-paragraph">
+        What can we do for you? Gamification. Ludoclips (interactive music videos), interactive websites, apps...
+        everything is possible. + ART DIRECTION + SHORT FILM/VIDEO ASSIST
+      </div>
+      <div class="about-text-button">
+        <a  href="https://charliesnchez.itch.io/tentacion">
+        <button class="contact-link-about contact-button hover">Visit Project</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
  </div>
  <div class="controls">
   <button id ="forest-prev" class="hover"><img src="images/prev.png" alt="prev" class="imgs"></button>
@@ -400,8 +426,8 @@
 
 <div class="social-media-links opacity">
   <ul>
-    <li> <a href="#">IN</a> </li>
-    <li> <a href="#">𝕏</a> </li>
+    <li class="socialnetwork-icon fade-up"> <a href="https://www.instagram.com/beastartstv"><img src="images/instagram-white-icon.webp" style="width:30px;height:auto;cursor:none;" alt="IG-image"></a></li>
+    <!--- <li> <a href="#">X</a> </li> --->
   </ul>
 </div>
       </div>
@@ -415,7 +441,7 @@
      <a href="#">DIRECTED BY CHARLIE SÁNCHEZ & MAKERFLY</a>
     </div>
   
-    <div class="navigation-links about-opacity">
+    <div id="mute-link" class="navigation-links about-opacity">
      <div class="navigation-close hover wildlife-close">
        <div class="navigation-close-line"></div>
        <div class="navigation-close-line"></div>
@@ -453,8 +479,8 @@
 
 <div class="social-media-links opacity">
   <ul>
-    <li> <a href="#">IN</a> </li>
-    <li> <a href="#">𝕏</a> </li>
+    <li class="socialnetwork-icon fade-up"> <a href="https://www.instagram.com/beastartstv"><img src="images/instagram-white-icon.webp" style="width:30px;height:auto;cursor:none;" alt="IG-image"></a></li>
+    <!--- <li> <a href="#">X</a> </li> --->
   </ul>
 </div>
       </div>
@@ -468,7 +494,7 @@
      <a href="#">DIRECTED BY CHARLIE SÁNCHEZ</a>
     </div>
   
-    <div class="navigation-links about-opacity">
+    <div id="mute-link" class="navigation-links about-opacity">
      <div class="navigation-close hover city-close">
        <div class="navigation-close-line"></div>
        <div class="navigation-close-line"></div>
@@ -505,8 +531,8 @@
 </div>
 <div class="social-media-links opacity">
   <ul>
-    <li> <a href="#">IN</a> </li>
-    <li> <a href="#">𝕏</a> </li>
+    <li class="socialnetwork-icon fade-up"> <a href="https://www.instagram.com/beastartstv"><img src="images/instagram-white-icon.webp" style="width:30px;height:auto;cursor:none;" alt="IG-image"></a></li>
+    <!--- <li> <a href="#">X</a> </li> --->
   </ul>
 </div>
       </div>
@@ -533,7 +559,7 @@
   
   </div>
   <div class="contact-header contact-opacity">
-    getting in touch is easy.
+    The future of our industries lies in interaction.<br>Discover it with us.
   </div>
 <div class="container-fluid">
   <div class="row p-0 m-0">

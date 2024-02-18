@@ -33,6 +33,7 @@ box-sizing: border-box;
 body{
   user-select: none;
   background: #050505;
+  overscroll-behavior-y: contain !important;
 }
 html{
   background: #050505;
@@ -99,7 +100,6 @@ html{
   height:100vh;
   width: 100%;
 }
-
 .parallax-video{
   position: absolute;
   top: 0;
@@ -151,6 +151,7 @@ html{
   padding-left: 40px;
   font-size: 18px;
   width: 100%;
+  cursor: none !important;
 }
 .logo{
   display: inline-block;
@@ -168,11 +169,13 @@ html{
   float: right;
   padding: 10px;
   padding-right: 40px;
+  cursor: none !important;
 }
 a{
   color: inherit;
   text-decoration: none;
   outline: none;
+  cursor: none !important;
 }
 a:hover{
   color: inherit;
@@ -186,6 +189,7 @@ li{
 .links{
   opacity:.9;
   transition: all .4s ease;
+  cursor: none !important;
 }
 .links:hover{
   opacity: 1;
@@ -232,6 +236,7 @@ ul{
   width: 100px;
   height:45px;
   z-index: 10;
+  cursor: none;
 }
 .swiper-pagination{
   width:100px;
@@ -345,6 +350,7 @@ mix-blend-mode: luminosity;
   display: none;
   transform: scale(.9);
   overflow: hidden;
+  cursor: none;
 }
 #about-color{
   position: absolute;
@@ -397,14 +403,13 @@ mix-blend-mode: luminosity;
   cursor: none;
 }
 .logo-centered{
-  display: flex;
+  display: block;
   position: fixed;
-  align-items: center;
-  justify-content: center;
-  left: 50%;
-  margin-top: -3vh;
-  width: 2% !important;
-  mix-blend-mode: difference !important;
+  top: 4%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
 }
 .navigation-close-line:nth-child(2){
   transform: rotate(45deg);
@@ -796,6 +801,7 @@ input:focus  , input:valid{
   max-width: 60%;
   position: relative;
   height: auto;
+  cursor: none;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -823,11 +829,12 @@ input:focus  , input:valid{
   position: relative;
   display: block;
   transform: scale(var(--ggs,1));
+  left: -8.5px !important;
   width: 16px;
   height: 24px;
   border: 2px solid rgb(245, 245, 245);
-  border-radius: 10px
-
+  border-radius: 10px;
+  cursor: none;
 }
 
 .gg-mouse::after {
@@ -851,7 +858,14 @@ position: absolute;
 left: 50%;
 bottom: 10%;
 z-index: 2;
+cursor: none !important;
 }
+
+.socialnetwork-icon{
+  max-width: 2px !important;
+  cursor: none !important;
+}
+
 @keyframes mouse {
   0%{
     transform: translateY(0%);
@@ -892,8 +906,8 @@ FOR MOBILES
 */
 @media all and (max-width: 740px) and (min-width: 540px){
 .navigation{
-  font-size: 16px;/*
-  padding-top:20px;
+  font-size: 16px;
+  padding-top:20px;/*
   padding-left: 20px;
   padding-left: 10px;*/
 }
@@ -911,9 +925,10 @@ FOR MOBILES
   font-size: 16px;
   padding-left: 0px;
   margin-top: 30px;
+  cursor: none !important;
 }
 .logo-centered{
-  margin-top: -60px !important;
+  margin-top: 0px !important;
 }
 .project-link{
   padding:40px;
@@ -921,12 +936,12 @@ FOR MOBILES
   padding-right: 40px;
 }
 .slider-controls{
-  position: absolute;
-  right:37.5%;
+  left: 30%;
+  right: 35%;
   bottom:10%;
+  justify-content: center !important;
   height: auto;
   width: auto;
-  display: flex;
   flex-direction: row;
 }
 .slide-text{
@@ -982,6 +997,7 @@ display: none;
 }
 .view-project{
   display: block;
+  margin-top: -0.4em;
 }
 .input-line{
   flex-direction: column;
@@ -1031,9 +1047,8 @@ FOR EXTRA SMALL DEVICES
 @media all and (max-width: 540px) and (min-width: 0px){
   .navigation{
     font-size: 14px;
-    padding-top:20px;
-    padding-left: 20px;
-    padding-left: 10px;
+    padding-top:50px;
+    padding-left: 30px;
   }
   .cursor,.cursor-two{
     display: none;
@@ -1052,12 +1067,12 @@ FOR EXTRA SMALL DEVICES
     padding-left: 0px;
   }
   .slider-controls{
-    position: absolute;
-    right:32.5%;
+    left: 20%;
+    right: 25%;
     bottom:10%;
+    justify-content: center !important;
     height: auto;
     width: auto;
-    display: flex;
     flex-direction: row;
   }
   .slide-text{
@@ -1120,6 +1135,7 @@ FOR EXTRA SMALL DEVICES
   }
   .view-project{
     display: block;
+    margin-top: 0.2em;
   }
   
   .pace{
