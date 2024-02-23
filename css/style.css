@@ -25,6 +25,12 @@
       font-weight: normal;
       font-style: normal;
     }
+    @font-face {
+      font-family: "teko";
+      src: url('fonts/teko.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
 *{
 padding: 0;
 margin: 0;
@@ -145,11 +151,12 @@ html{
   top: 0;
   z-index:10;
   color: rgb(245, 245, 245);
-  font-family: 'brook', sans-serif;
+  font-family: 'teko', sans-serif;
+  text-transform: uppercase;
   padding: 20px;
   padding-top: 40px;
-  padding-left: 40px;
-  font-size: 18px;
+  padding-left: 60px;
+  font-size: 28px;
   width: 100%;
   cursor: none !important;
 }
@@ -158,8 +165,8 @@ html{
   z-index: 10;
   color: rgb(245, 245, 245);
   padding:10px;
-  font-family: brook;
-  font-size: 18px;
+  font-family: teko;
+  font-size: 28px;
   font-weight: 900;
   letter-spacing: 1px;
   border-radius: 4px;
@@ -168,7 +175,7 @@ html{
 .navigation-links{
   float: right;
   padding: 10px;
-  padding-right: 40px;
+  padding-right: 60px;
   cursor: none !important;
 }
 a{
@@ -207,7 +214,7 @@ li{
   left: -25px;
   opacity:1;
   overflow: hidden;
-  font-family: brook;
+  font-family: teko;
   text-align: center;
   color:rgb(255, 255, 255);
   font-size: 16px;
@@ -338,7 +345,7 @@ mix-blend-mode: luminosity;
   font-size: 18px;
 }
 #home .social-media-links ul li ,#about .social-media-links ul li ,.project .social-media-links ul li{
-  font-family: brook;
+  font-family: teko;
   font-size: 18px;
 }
 
@@ -431,6 +438,8 @@ mix-blend-mode: luminosity;
   z-index: 5;
   mix-blend-mode: difference;
   color: #ffffff;
+  font-family: teko !important;
+
 }
 /*
 mix-blend-mode: normal;
@@ -451,7 +460,7 @@ mix-blend-mode: color;
 mix-blend-mode: luminosity;
 */
 .about-text-header{
-  font-size: 28px;
+  font-size: 46px;
   padding-bottom: 30px;
   font-family: indigodemon3d;
 
@@ -460,11 +469,13 @@ mix-blend-mode: luminosity;
   padding-top: 20px;
   text-align: left;
   margin: 10px;
-  font-family: brook;
+  font-family: teko;
+  font-size: 24px !important;
+  text-transform: uppercase !important;
 }
 .about-text-paragraph{
   padding-bottom: 10px;
-  font-size: 16px;
+  font-size: 24px;
   opacity: .9;
   font-weight: 400;
 }
@@ -478,6 +489,7 @@ mix-blend-mode: luminosity;
   opacity: .8;
   color:#041b4e;
   transition: all .4s ease;
+  text-transform: uppercase !important;
 }
 .contact-button:hover{
   opacity: 1;
@@ -584,11 +596,13 @@ z-index: 2;
   color: white;
   line-height: 0.8em;
 }
+
 .view-project{
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 200;
-  font-family: brook;
-  margin-top: -0.7em;
+  font-family: teko;
+  font-weight: 1000;
+  margin-top: -0.6em;
   opacity: .9;
   padding: 0;
   color: rgb(49, 49, 49);
@@ -656,14 +670,14 @@ z-index: 2;
   position: relative;
   z-index: 5;
 color: rgb(245, 245, 245);
-font-family: brook;
+font-family: teko;
 font-weight: 100;
 display: none;
 transform: scale(.9);
 }
 .contact-social-media-links{
 padding-top: 30px;
-font-family: brook;
+font-family: teko;
 z-index: 5;
 
 }
@@ -734,7 +748,7 @@ form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: brook;
+  font-family: teko;
   justify-content: center;
   height: auto;
 }
@@ -746,7 +760,7 @@ form{
   padding: 10px 30px;
   font-size: 18px;
   margin: 20px;
-  font-family: brook;
+  font-family: teko;
   cursor: none;
   transition: all .4s ease;
   position: relative;
@@ -784,7 +798,7 @@ margin: 10px;
 margin-bottom: 20px;
 font-size: 18px;
 color: rgb(245, 245, 245);
-font-family: indigodemon;
+font-family: teko;
 transition: all .2s ease;
 }
  form .textarea:focus , form .textarea:valid{
@@ -990,6 +1004,7 @@ display: none;
   font-size: 22px;
   padding-bottom: 10px;
 }
+
 .about-text-paragraph{
   padding-bottom: 10px;
   font-size: 16px;
@@ -999,7 +1014,7 @@ display: none;
   width: 2px;
 }
 #about .social-media-links ul li{
-  font-family: brook;
+  font-family: teko;
   font-size: 16px;
 }
 .slides img,.forest-slides img,.wildlife-slides img,.city-slides img{

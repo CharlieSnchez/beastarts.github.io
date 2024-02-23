@@ -6,7 +6,7 @@
     __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
   defaultOptions = {
-    catchupTime: 10000000,
+    catchupTime: 10000000000,
     initialRate: .03,
     minTime: 250,
     ghostTime: 100,
