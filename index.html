@@ -573,28 +573,30 @@
 <!--CONTACT PAGE-->
 <div id="contact">
   <div class="navigation navigation-contact">
-        
+
     <div class="logo home-link contact-opacity">
-     <a href="#">BEAST ARTS</a>
+      <a href="#">BEAST ARTS</a>
     </div>
-  
+
     <div class="navigation-links contact-opacity">
-     <div class="navigation-close hover contact-close">
-       <div class="navigation-close-line"></div>
-       <div class="navigation-close-line"></div>
-     </div>
+      <div class="navigation-close hover contact-close">
+        <div class="navigation-close-line"></div>
+        <div class="navigation-close-line"></div>
+      </div>
     </div>
-  
+
   </div>
   <div class="contact-header contact-opacity">
     The future of our industries lies in interaction.<br>Discover it with us.
   </div>
-<div class="container-fluid">
-  <div class="row p-0 m-0">
-  
+
+  <!--
+  <div class="container-fluid">
+    <div class="row p-0 m-0">
+
       <div class="col-12 col-md-12 col-lg-12 col-sm-12 col-xs-12 p-0 m-0">
         <div class="form contact-opacity" autocomplete="false">
-          <form  id ="myForm" action="mail.php">
+          <form id="myForm" action="inc/sendEmail.php">
             <div class="input-line">
               <input id="name" type="text" placeholder="name" class="input-same-line">
               <input id="email" type="email" placeholder="email" class="input-same-line">
@@ -603,11 +605,92 @@
               <input id="subject" type="text" placeholder="subject">
               <textarea name="textarea" id="body" class="textarea" placeholder="message"></textarea>
             </div>
-           <button type="button" id="submit" class="hover">Send</button>
+            <button type="button" id="submit" class="hover">Send</button>
           </form>
         </div>
-        </div>
-</div>
+      </div>
+    </div>
+    -->
+
+    <div class="container-fluid">
+      <div class="row p-0 m-0">
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+          onload="if((typeof submitted !== 'undefined') && submitted) {}"></iframe>
+
+        <script type="text/javascript">var submitted = false;</script>
+
+        <form name="contactForm" id="contactForm" enctype="text/plain" action="javascript:;" target="hidden_iframe"
+          onsubmit="checkForm()">
+
+            <div class="col-12 col-md-12 col-lg-12 col-sm-12 col-xs-12 p-0 m-0">
+              <div class="form contact-opacity" autocomplete="false">
+                <div class="form-field" id="form-field-name">
+                  <div class="input-line">
+                    <!-- <input name="contactName" type="text" id="contactName" > -->
+                    <input type="text" name="entry.1884265043" id="entry.1884265043" placeholder="Name" value=""
+                      minlength="2" required="" class="input-same-line"><br>
+                    <input type="text" name="entry.1448977556" id="entry.1448977556" placeholder="Email" value=""
+                      minlength="3" required="" class="input-same-line"><br>
+                </div>
+
+                <div class="input-line-column">
+                  <input type="text" name="entry.2082538317" id="entry.2082538317" placeholder="Subject" value=""><br>
+                  <textarea type="textarea" class="textarea" name="entry.513669972" id="entry.513669972" placeholder="Message"
+                    minlength="15" required=""></textarea><br>
+                </div>
+
+              </div>
+
+
+              <div class="form-field">
+
+                <button class="submitform hover" id="form-field-button">Send</button>
+
+        </form>
+
+ <script>
+  function fadeOutOnClick() {
+    if(submitted){
+       $('#form-field-button').fadeOut(600);
+       
+       setTimeout(function () {
+        $('#message-success').fadeIn(600);
+       }, 2200);	
+       }
+    }
+
+   function checkForm(){
+     if(document.getElementById("entry.1884265043").value.length > 1
+       && document.getElementById("entry.1448977556").value.length > 2
+       && document.getElementById("entry.513669972").value.length > 14){
+       document.contactForm.action = "https://docs.google.com/forms/d/e/1FAIpQLScqCJrFMwfRa0VgCH7PZtiu0GKtzVl8dFjDkbnaTAqAf7uoiQ/formResponse?";
+       submitted=true;
+       console.log("Mail enviado (supuestamente)");
+       fadeOutOnClick();
+       document.getElementById("form-field-button").disabled = true;
+     }
+     else {
+       document.getElementById("form-field-button").classList.remove('submit-anim'); // reset animation
+       void document.getElementById("form-field-button").offsetWidth; // trigger reflow
+       document.getElementById("form-field-button").classList.add('submit-anim'); // start animation
+     }
+   }
+
+ </script>
+       </fieldset>
+     </form> <!-- Form End -->
+
+       <!-- contact-warning -->
+       <div id="message-warning">            	
+       </div>            
+       <!-- contact-success -->
+     <div id="message-success">
+          <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+     </div>
+
+    </div> <!-- /col-twelve -->
+  
+</div> <!-- /contact-form -->
 
 </div>
 </div>
