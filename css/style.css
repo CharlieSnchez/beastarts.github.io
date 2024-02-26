@@ -1872,8 +1872,8 @@ FOR EXTRA SMALL DEVICES
 
 @media all and (max-width: 540px) and (min-width: 0px){
   .navigation{
-    font-size: 24px;
-    padding-top:55px;
+    font-size: 20px;
+    padding-top:30px;
     padding-left: 30px;
   }
   .cursor,.cursor-two{
@@ -1885,13 +1885,12 @@ FOR EXTRA SMALL DEVICES
     padding-right: 20px;
   }
   .navigation-links{
-    padding-right: 20px;
-    padding-left: 0px;
+    padding-right: 0px;
+    padding-left: 10px;
   }
   .logo{
     font-size: 20px;
     padding-left: 10px;
-    margin-top: -100px !important;
   }
   .slider-controls{
     left: 20%;
@@ -1960,9 +1959,8 @@ FOR EXTRA SMALL DEVICES
     width: 80%;
     top: 26vh !important;
   
-    font-size: 18px;
+    font-size: 16px;
     height: 145px;
-    overflow-y: scroll !important;
     }
 
   .about-text-paragraph.tentacion-2{
@@ -1971,25 +1969,27 @@ FOR EXTRA SMALL DEVICES
     width: 80%;
   
   
-    font-size: 18px;
+    font-size: 16px;
     bottom: 12vh !important;
     margin-right: 10vw !important;
   }
 
   .youtube-video.tentacion{
-    margin-top: 30% !important;
+    margin-top: 37% !important;
+    height: 23vh;
+    pointer-events: all !important;
   }
 
 
   .about-text-header.oasis{
     display: block;
     position: fixed !important;
-    top: 16vh !important;
+    top: 14vh !important;
     left: 10vw !important;
     margin-right: 40vw;
     width: 80% !important;
 
-    font-size: 24px;
+    font-size: 20px;
   
   }
   
@@ -2010,7 +2010,7 @@ FOR EXTRA SMALL DEVICES
     width: 80% !important;
     top: 23vh !important;
   
-    font-size: 20px;
+    font-size: 16px;
     opacity: .9;
   }
   .about-text-paragraph.oasis-2{
@@ -2019,11 +2019,17 @@ FOR EXTRA SMALL DEVICES
     width: 80%;
   
   
-    font-size: 20px;
-    bottom: 17vh !important;
+    font-size: 16px;
+    bottom: 12.5vh !important;
     margin-right: 10vw !important;
   }
 
+
+  .youtube-video.oasis{
+    margin-top: 8% !important;
+    height: 23vh;
+    pointer-events: all !important;
+  }
 
 
 
@@ -2033,10 +2039,10 @@ FOR EXTRA SMALL DEVICES
     position: fixed !important;
     top: 10vh !important;
     left: 10vw !important;
-    width: 80% !important;
+    width: 70% !important;
     margin-right: 40vw;
   
-    font-size: 24px;
+    font-size: 20px;
   
   }
   
@@ -2053,11 +2059,14 @@ FOR EXTRA SMALL DEVICES
   
   .about-text-paragraph.a-medias-verdades-1{
     position: fixed !important;
-    left: 60vw !important;
-    width: 30%;
-    top: 46vh !important;
+    left: 10vw !important;
+    width: 80%;
+  
   
     font-size: 20px;
+    top: 31vh !important;
+    margin-right: 10vw !important;
+    font-size: 16px;
     text-align: left !important;
   }
   .about-text-paragraph.a-medias-verdades-2{
@@ -2067,22 +2076,22 @@ FOR EXTRA SMALL DEVICES
   
   
     font-size: 20px;
-    top: 23vh !important;
+    top: 67vh !important;
     margin-right: 10vw !important;
-    font-size: 20px;
+    font-size: 16px;
     text-align: left !important;
 
   }
   .about-text-paragraph.a-medias-verdades-3{
+    display: none;
     position: fixed !important;
     left: 10vw !important;
     width: 80%;
   
-  
     font-size: 20px;
-    bottom: 27vh !important;
+    bottom: 7vh !important;
     margin-right: 10vw !important;
-    font-size: 20px;
+    font-size: 16px;
     text-align: left !important;
 
   }
@@ -2096,8 +2105,8 @@ FOR EXTRA SMALL DEVICES
     top: 12vh !important;
     padding-right: 10%;
     padding-left: 10%;
-  
-    font-size: 24px;
+    text-align: left !important;
+    font-size: 20px;
   
   }
   
@@ -2116,10 +2125,9 @@ FOR EXTRA SMALL DEVICES
     position: fixed !important;
     left: 10vw !important;
     width: 80% !important;
-    top: 22vh !important;
+    top: 23vh !important;
   
-    font-size: 20px;
-    opacity: .9;
+    font-size: 16px;
   }
   .about-text-paragraph.doscientos-2{
     position: fixed !important;
@@ -2127,8 +2135,8 @@ FOR EXTRA SMALL DEVICES
     width: 80%;
   
   
-    font-size: 20px;
-    bottom: 17vh !important;
+    font-size: 16px;
+    bottom: 15vh !important;
     margin-right: 10vw !important;
   }
 
