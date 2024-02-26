@@ -1889,8 +1889,9 @@ FOR EXTRA SMALL DEVICES
     padding-left: 0px;
   }
   .logo{
-    font-size: 24px;
-    padding-left: 20px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-top: -100px !important;
   }
   .slider-controls{
     left: 20%;
@@ -1932,20 +1933,14 @@ FOR EXTRA SMALL DEVICES
 
 
 
-
-
-
-
-
   .about-text-header.tentacion{
     display: block;
     position: fixed !important;
-    top: 12vh !important;
+    top: 13vh !important;
     left: 10vw !important;
     margin-right: 40vw;
   
-    font-size: 24px;
-  
+    font-size: 20px;
   }
   
   .about-text-button.tentacion{
@@ -1963,23 +1958,27 @@ FOR EXTRA SMALL DEVICES
     position: fixed !important;
     left: 10vw !important;
     width: 80%;
-    top: 22vh !important;
+    top: 26vh !important;
   
-    font-size: 20px;
-    opacity: .9;
-  }
+    font-size: 18px;
+    height: 145px;
+    overflow-y: scroll;
+    }
+
   .about-text-paragraph.tentacion-2{
     position: fixed !important;
     left: 10vw !important;
     width: 80%;
   
   
-    font-size: 20px;
-    bottom: 17vh !important;
+    font-size: 18px;
+    bottom: 12vh !important;
     margin-right: 10vw !important;
   }
 
-
+  .youtube-video.tentacion{
+    margin-top: 30% !important;
+  }
 
 
   .about-text-header.oasis{
