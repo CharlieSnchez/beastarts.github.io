@@ -1962,7 +1962,7 @@ FOR EXTRA SMALL DEVICES
   
     font-size: 18px;
     height: 145px;
-    overflow-y: scroll;
+    overflow-y: scroll !important;
     }
 
   .about-text-paragraph.tentacion-2{
