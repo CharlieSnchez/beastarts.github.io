@@ -544,11 +544,10 @@ mix-blend-mode: luminosity;
 .about-text-paragraph.oasis-1{
   position: fixed !important;
   left: 5vw !important;
-  width: 33vw;
   top: 50vh !important;
 
   font-size: 24px;
-  width: 490px !important;
+  width: 400px !important;
 
 }
 .about-text-paragraph.oasis-2{
@@ -556,7 +555,95 @@ mix-blend-mode: luminosity;
   right: -5vw !important;
   width: 25vw;
 
-  bottom: 46vh !important;
+  bottom: 45vh !important;
+  margin-right: 10vw !important;
+}
+
+
+
+.about-text-header.a-medias-verdades{
+  display: block;
+  width: 55% !important;
+  top: 20vh !important;
+  left: 5vw !important;
+  right: 5vw !important;
+}
+
+.about-text-button.a-medias-verdades{
+  position:fixed;
+  width: 100% !important;
+  left: 0;
+  text-align: center;
+  bottom: 15vh !important;
+  pointer-events: all !important;
+}
+
+.about-text-paragraph.a-medias-verdades-1{
+  position: fixed !important;
+  right: -5vw !important;
+  width: 25vw;
+
+  bottom: 64vh !important;
+  margin-right: 10vw !important;
+  text-align: right;
+
+}
+.about-text-paragraph.a-medias-verdades-2{
+  position: fixed !important;
+  right: -5vw !important;
+  width: 25vw;
+
+  bottom: 40vh !important;
+  margin-right: 10vw !important;
+  text-align: right;
+
+}
+.about-text-paragraph.a-medias-verdades-3{
+  position: fixed !important;
+  right: -5vw !important;
+  width: 25vw;
+
+  bottom: 30vh !important;
+  margin-right: 10vw !important;
+  text-align: right;
+
+}
+
+
+
+.about-text-header.doscientos{
+  display: block;
+  position: fixed !important;
+  top: 17vh !important;
+  left: 0 !important;
+  width: 100% !important;
+  text-align: center;
+}
+
+.about-text-button.doscientos{
+  position:fixed;
+  width: 100% !important;
+  left: 0;
+  text-align: center;
+  bottom: 15vh !important;
+  pointer-events: all !important;
+}
+
+.about-text-paragraph.doscientos-1{
+  position: fixed !important;
+  left: 5vw !important;
+  top: 40vh !important;
+
+  font-size: 24px;
+  width: 400px !important;
+
+}
+.about-text-paragraph.doscientos-2{
+  position: fixed !important;
+  right: -5vw !important;
+  width: 25vw;
+
+  bottom: 35vh !important;
   margin-right: 10vw !important;
 }
 
@@ -1070,6 +1157,7 @@ cursor: none !important;
   top: 11vh !important;
   left: 5vw !important;
   margin-right: 10vw;
+  width: 90% !important;
 }
 
 .about-text-button.oasis{
@@ -1105,9 +1193,12 @@ cursor: none !important;
 .about-text-header.a-medias-verdades{
   display: block;
   position: fixed !important;
-  top: 11vh !important;
+  top: 9vh !important;
   left: 5vw !important;
   margin-right: 10vw;
+  width: 85% !important;
+
+  font-size: 38px;
 }
 
 .about-text-button.a-medias-verdades{
@@ -1121,9 +1212,9 @@ cursor: none !important;
 
 .about-text-paragraph.a-medias-verdades-1{
   position: fixed !important;
-  left: 5vw !important;
-  width: 33vw;
-  top: 40vh !important;
+  right: 0vw !important;
+  width: 70%;
+  top: 19vh !important;
 
   font-size: 24px;
 }
@@ -1136,7 +1227,14 @@ cursor: none !important;
   bottom: 32vh !important;
   margin-right: 10vw !important;
 }
+.about-text-paragraph.a-medias-verdades-3{
+  position: fixed !important;
+  right: 0vw !important;
+  width: 75%;
 
+  bottom: 15vh !important;
+  margin-right: 10vw !important;
+}
 
 
 
@@ -1144,8 +1242,8 @@ cursor: none !important;
   display: block;
   position: fixed !important;
   top: 11vh !important;
-  left: 5vw !important;
-  margin-right: 10vw;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
 }
 
 .about-text-button.doscientos{
@@ -1183,6 +1281,252 @@ cursor: none !important;
   margin-left: 10%;
   margin-right: 10%;
 }
+
+
+
+
+
+
+/*
+FOR TABLETS
+*/
+
+@media all and (max-width: 991px) and (min-width: 740px){
+  .cursor,.cursor-two{
+    display: none;
+  }
+.about-img{
+  display: none;
+}
+#about{
+  background: url(../images/urbex-photography.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.slides img,.forest-slides img,.wildlife-slides img,.city-slides img{
+  width: auto;
+  max-width: 95%;
+  max-height: auto;
+  position: absolute;
+  margin: auto;
+  border-radius: 8px;
+}
+.view-project{
+  display: block;
+  font-size: 20px;
+}
+.pace{
+  width:300px;
+}
+.project-link{
+  padding:100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.gg-mouse {
+
+  display:none;
+}
+
+#projects .swiper-slide img{
+  width: 100%;
+  max-height: 70vh;
+  position: absolute;
+  margin: auto;
+  pointer-events: none;
+  border-radius: 6px;
+}
+
+
+.youtube-video{
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+
+
+.about-text-header.tentacion{
+  display: block;
+  position: fixed !important;
+  top: 14vh !important;
+  left: 5vw !important;
+  margin-right: 10vw;
+}
+
+.about-text-button.tentacion{
+  position:fixed;
+  top: 18.1vh !important;
+  text-align: right;
+  padding-right: 10vh !important;
+  font-size: 2.5vw !important;
+
+  pointer-events: all !important;
+}
+
+.about-text-paragraph.tentacion-1{
+  position: fixed !important;
+  left: 5vw !important;
+  width: 33vw;
+  top: 36vh !important;
+
+  font-size: 24px;
+  opacity: .9;
+  font-weight: 400;
+}
+.about-text-paragraph.tentacion-2{
+  position: fixed !important;
+  right: -5vw !important;
+  width: 90%;
+
+
+  bottom: 17vh !important;
+  margin-right: 10vw !important;
+}
+
+
+
+.about-text-header.oasis{
+  display: block;
+  position: fixed !important;
+  top: 10vh !important;
+  left: 5vw !important;
+  margin-right: 10vw;
+  width: 90% !important;
+
+  font-size: 38px;
+
+}
+
+.about-text-button.oasis{
+  position:fixed;
+  top: 18.1vh !important;
+  text-align: right;
+  padding-right: 10vh !important;
+  font-size: 2.5vw !important;
+
+  pointer-events: all !important;
+}
+
+.about-text-paragraph.oasis-1{
+  position: fixed !important;
+  left: 30vw !important;
+  width: 65vw !important;
+  top: 16vh !important;
+  text-align: right;
+
+  font-size: 22px;
+}
+.about-text-paragraph.oasis-2{
+  position: fixed !important;
+  right: -5vw !important;
+  width: 90%;
+  font-size: 22px;
+
+  bottom: 13vh !important;
+  margin-right: 10vw !important;
+}
+
+
+.about-text-header.a-medias-verdades{
+  display: block;
+  position: fixed !important;
+  top: 10vh !important;
+  left: 5vw !important;
+  margin-right: 0vw;
+  width: 90% !important;
+
+  font-size: 36px;
+
+}
+
+.about-text-button.a-medias-verdades{
+  position:fixed;
+  top: 18.1vh !important;
+  text-align: right;
+  padding-right: 10vh !important;
+  font-size: 2.5vw !important;
+
+  pointer-events: all !important;
+}
+
+.about-text-paragraph.a-medias-verdades-1{
+  position: fixed !important;
+  left: -5 !important;
+  width: 85%;
+  top: 25vh !important;
+
+  font-size: 22px;
+}
+.about-text-paragraph.a-medias-verdades-2{
+  position: fixed !important;
+  right: -5vw !important;
+  width: 90%;
+
+
+  bottom: 16.5vh !important;
+  margin-right: 10vw !important;
+  font-size: 22px;
+  text-align: left;
+
+}
+.about-text-paragraph.a-medias-verdades-3{
+  position: fixed !important;
+  right: -5vw !important;
+  width: 90%;
+
+  bottom: 11vh !important;
+  margin-right: 10vw !important;
+  font-size: 22px;
+  text-align: left;
+
+}
+
+
+
+.about-text-header.doscientos{
+  display: block;
+  position: fixed !important;
+  top: 14vh !important;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+}
+
+.about-text-button.doscientos{
+  position:fixed;
+  top: 18.1vh !important;
+  text-align: right;
+  padding-right: 10vh !important;
+  font-size: 2.5vw !important;
+
+  pointer-events: all !important;
+}
+
+.about-text-paragraph.doscientos-1{
+  position: fixed !important;
+  left: 5vw !important;
+  width: 33vw;
+  top: 36vh !important;
+
+  font-size: 24px;
+  opacity: .9;
+  font-weight: 400;
+}
+.about-text-paragraph.doscientos-2{
+  position: fixed !important;
+  right: -5vw !important;
+  width: 90%;
+
+
+  bottom: 14vh !important;
+  margin-right: 10vw !important;
+}
+
+}
+
+
+
+
 
 
 
@@ -1315,8 +1659,9 @@ display: none;
 .about-text-header.oasis{
   display: block;
   position: fixed !important;
-  top: 14vh !important;
+  top: 13vh !important;
   left: 10vw !important;
+  width: 80% !important;
   margin-right: 40vw;
 
   font-size: 24px;
@@ -1337,17 +1682,15 @@ display: none;
 .about-text-paragraph.oasis-1{
   position: fixed !important;
   left: 10vw !important;
-  width: 80%;
-  top: 24vh !important;
+  width: 80% !important;
+  top: 20vh !important;
 
   font-size: 20px;
-  opacity: .9;
 }
 .about-text-paragraph.oasis-2{
   position: fixed !important;
   left: 10vw !important;
   width: 80%;
-
 
   font-size: 20px;
   bottom: 17vh !important;
@@ -1360,7 +1703,7 @@ display: none;
 .about-text-header.a-medias-verdades{
   display: block;
   position: fixed !important;
-  top: 14vh !important;
+  top: 12vh !important;
   left: 10vw !important;
   margin-right: 40vw;
 
@@ -1381,9 +1724,9 @@ display: none;
 
 .about-text-paragraph.a-medias-verdades-1{
   position: fixed !important;
-  left: 10vw !important;
-  width: 80%;
-  top: 24vh !important;
+  left: 60vw !important;
+  width: 30%;
+  top: 22vh !important;
 
   font-size: 20px;
   opacity: .9;
@@ -1395,20 +1738,31 @@ display: none;
 
 
   font-size: 20px;
-  bottom: 17vh !important;
+  bottom: 20vh !important;
   margin-right: 10vw !important;
+  text-align: left;
+}
+.about-text-paragraph.a-medias-verdades-3{
+  position: fixed !important;
+  left: 10vw !important;
+  width: 80%;
+
+
+  font-size: 20px;
+  bottom: 13vh !important;
+  margin-right: 10vw !important;
+  text-align: left;
 }
 
 
 .about-text-header.doscientos{
   display: block;
   position: fixed !important;
-  top: 14vh !important;
-  left: 10vw !important;
-  margin-right: 40vw;
+  top: 12vh !important;
+  font-size: 32px;
 
-  font-size: 24px;
-
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .about-text-button.doscientos{
@@ -1425,11 +1779,10 @@ display: none;
 .about-text-paragraph.doscientos-1{
   position: fixed !important;
   left: 10vw !important;
-  width: 80%;
+  width: 100%;
   top: 24vh !important;
 
   font-size: 20px;
-  opacity: .9;
 }
 .about-text-paragraph.doscientos-2{
   position: fixed !important;
@@ -1632,17 +1985,18 @@ FOR EXTRA SMALL DEVICES
   .about-text-header.oasis{
     display: block;
     position: fixed !important;
-    top: 12vh !important;
+    top: 16vh !important;
     left: 10vw !important;
     margin-right: 40vw;
-  
+    width: 80% !important;
+
     font-size: 24px;
   
   }
   
   .about-text-button.oasis{
     position:fixed;
-    top: 12.7vh !important;
+    top: 13.7vh !important;
     text-align: right;
     
     padding-right: 10vw !important;
@@ -1654,8 +2008,8 @@ FOR EXTRA SMALL DEVICES
   .about-text-paragraph.oasis-1{
     position: fixed !important;
     left: 10vw !important;
-    width: 80%;
-    top: 22vh !important;
+    width: 80% !important;
+    top: 23vh !important;
   
     font-size: 20px;
     opacity: .9;
@@ -1678,8 +2032,9 @@ FOR EXTRA SMALL DEVICES
   .about-text-header.a-medias-verdades{
     display: block;
     position: fixed !important;
-    top: 12vh !important;
+    top: 10vh !important;
     left: 10vw !important;
+    width: 80% !important;
     margin-right: 40vw;
   
     font-size: 24px;
@@ -1699,12 +2054,12 @@ FOR EXTRA SMALL DEVICES
   
   .about-text-paragraph.a-medias-verdades-1{
     position: fixed !important;
-    left: 10vw !important;
-    width: 80%;
-    top: 22vh !important;
+    left: 60vw !important;
+    width: 30%;
+    top: 46vh !important;
   
     font-size: 20px;
-    opacity: .9;
+    text-align: left !important;
   }
   .about-text-paragraph.a-medias-verdades-2{
     position: fixed !important;
@@ -1713,8 +2068,24 @@ FOR EXTRA SMALL DEVICES
   
   
     font-size: 20px;
-    bottom: 17vh !important;
+    top: 23vh !important;
     margin-right: 10vw !important;
+    font-size: 20px;
+    text-align: left !important;
+
+  }
+  .about-text-paragraph.a-medias-verdades-3{
+    position: fixed !important;
+    left: 10vw !important;
+    width: 80%;
+  
+  
+    font-size: 20px;
+    bottom: 27vh !important;
+    margin-right: 10vw !important;
+    font-size: 20px;
+    text-align: left !important;
+
   }
 
 
@@ -1724,8 +2095,8 @@ FOR EXTRA SMALL DEVICES
     display: block;
     position: fixed !important;
     top: 12vh !important;
-    left: 10vw !important;
-    margin-right: 40vw;
+    padding-right: 10%;
+    padding-left: 10%;
   
     font-size: 24px;
   
@@ -1745,7 +2116,7 @@ FOR EXTRA SMALL DEVICES
   .about-text-paragraph.doscientos-1{
     position: fixed !important;
     left: 10vw !important;
-    width: 80%;
+    width: 80% !important;
     top: 22vh !important;
   
     font-size: 20px;
@@ -1848,101 +2219,9 @@ input{
 }
 
 
-/*
-FOR TABLETS
-*/
-
-@media all and (max-width: 991px) and (min-width: 740px){
-  .cursor,.cursor-two{
-    display: none;
-  }
-.about-img{
-  display: none;
-}
-#about{
-  background: url(../images/urbex-photography.jpg);
-  background-position: center;
-  background-size: cover;
-}
-.slides img,.forest-slides img,.wildlife-slides img,.city-slides img{
-  width: auto;
-  max-width: 95%;
-  max-height: auto;
-  position: absolute;
-  margin: auto;
-  border-radius: 8px;
-}
-.view-project{
-  display: block;
-  font-size: 20px;
-}
-.pace{
-  width:300px;
-}
-.project-link{
-  padding:100px;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-.gg-mouse {
-
-  display:none;
-}
-
-#projects .swiper-slide img{
-  width: 100%;
-  max-height: 70vh;
-  position: absolute;
-  margin: auto;
-  pointer-events: none;
-  border-radius: 6px;
-}
-
-
-.youtube-video{
-  margin-left: 0%;
-  margin-right: 0%;
-}
 
 
 
-.about-text-header.tentacion{
-  display: block;
-  position: fixed !important;
-  top: 14vh !important;
-  left: 5vw !important;
-  margin-right: 10vw;
-}
-
-.about-text-button.tentacion{
-  position:fixed;
-  top: 18.1vh !important;
-  text-align: right;
-  padding-right: 10vh !important;
-  font-size: 2.5vw !important;
-
-  pointer-events: all !important;
-}
-
-.about-text-paragraph.tentacion-1{
-  position: fixed !important;
-  left: 5vw !important;
-  width: 33vw;
-  top: 36vh !important;
-
-  font-size: 24px;
-  opacity: .9;
-  font-weight: 400;
-}
-.about-text-paragraph.tentacion-2{
-  position: fixed !important;
-  right: -5vw !important;
-  width: 90%;
+/* SPECIAL CASES */
 
 
-  bottom: 17vh !important;
-  margin-right: 10vw !important;
-}
-
-}
