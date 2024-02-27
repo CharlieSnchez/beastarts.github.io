@@ -648,7 +648,45 @@ mix-blend-mode: luminosity;
 }
 
 
+.about-text-header.about-1{
+  display: block;
+  position: fixed !important;
+  top: -1.2vh !important;
+  left: 0% !important;
+  width: 50% !important;
+  text-align: center;
+  font-size: 10.8vw !important;
+  line-height: 140px !important;
+  opacity: 40%;
+  mix-blend-mode: difference !important;
+  color: rgb(255, 187, 0);
+  font-family: indigodemon;
+}
 
+.about-text-header.about-2{
+  display: block;
+  position: relative !important;
+  top: 1.2vh !important;
+  left: -5% !important;
+  width: 100% !important;
+  font-family: indigodemon;
+  font-size: 30px !important;
+  line-height: 40px !important;
+}
+.about-text-paragraph.about{
+  margin-left: -5% !important;
+  top: 400vh !important;
+
+  font-size: 22px;
+}
+
+.about-text-button.about{
+  position:relative;
+  width: 100% !important;
+  left: 0;
+  text-align: center;
+  pointer-events: all !important;
+}
 
 
 
@@ -1550,6 +1588,33 @@ FOR TABLETS
   margin-right: 10vw !important;
 }
 
+
+.about-text-header.about-2{
+  font-size: 24px !important;
+  left: -5% !important;
+  opacity: 100%;
+  mix-blend-mode: none !important;
+}
+.about-text-paragraph.about{
+  margin-left: -5% !important;
+  font-size: 20px;
+  mix-blend-mode: unset !important;
+}
+
+.about-text-button.about{
+  position:relative;
+  width: 90% !important;
+  left: 0;
+  color: rgb(255, 123, 0) !important;
+  text-align: center;
+  pointer-events: all !important;
+}
+
+
+#about .social-media-links {
+  right:10%;
+}
+
 }
 
 
@@ -2260,6 +2325,47 @@ input{
 /* SPECIAL CASES */
 
 
+
+@media all and (max-width: 1600px) and (min-width: 1260px){
+
+.about-text-header.about-2{
+  font-size: 24px !important;
+  left: -10% !important;
+}
+.about-text-paragraph.about{
+  margin-left: -10% !important;
+  font-size: 20px;
+}
+
+.about-text-button.about{
+  position:relative;
+  width: 90% !important;
+  left: 0;
+  text-align: center;
+  pointer-events: all !important;
+}
+}
+
+@media all and (max-width: 1260px) and (min-width: 992px){
+
+  .about-text-header.about-2{
+    font-size: 18px !important;
+    line-height: 22px !important;
+    left: -14% !important;
+  }
+  .about-text-paragraph.about{
+    margin-left: -14% !important;
+    font-size: 18px;
+  }
+  
+  .about-text-button.about{
+    position:relative;
+    width: 80% !important;
+    left: 0;
+    text-align: center;
+    pointer-events: all !important;
+  }
+  }
 
 
 /* CONTACT */
