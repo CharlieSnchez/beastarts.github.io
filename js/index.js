@@ -1,9 +1,5 @@
 //loader
 
-window.addEventListener("beforeunload", function(event) {
-  reload();
-});
-
 paceOptions = {
   ajax: true,
   document: true,
@@ -44,10 +40,11 @@ new Swiper('#projects .swiper-container', {
     //parallax 
       $(document).ready(function() {
           var parallaxSlider;
+          
           var parallaxSliderOptions = {
             speed: 1500,
             autoplay: {
-              delay: 4500,
+              delay: 6000,
               disableOnInteraction: true,
             },
             parallax: true,
@@ -180,6 +177,8 @@ new Swiper('#projects .swiper-container', {
      gsap.from('.fade-up-two',1,{y:120,opacity:0,delay:2.25,stagger:.25});
   
      $('.about-link').on('click',function(){
+      document.getElementById("navigation-close").style.pointerEvents = "none";
+
        gsap.to('#home',.5,{scale:.9});
        gsap.to('#home',0,{width:'100%',height:'100vh',overflow:'hidden'});
        gsap.to('#home',0,{display:'none',delay:.7});
@@ -189,6 +188,11 @@ new Swiper('#projects .swiper-container', {
        gsap.to('#breaker',0,{display:'none',delay:1.7});
        gsap.from('.about-opacity',1,{opacity:0,delay:1.8,stagger:.2})
        gsap.from('.about-img',1,{delay:1.8,opacity:0})
+
+       setTimeout(() => {
+       document.getElementById("navigation-close").style.pointerEvents = "all"
+      }, 2000);
+
      })
      $('.contact-link').on('click',function(){
       gsap.to('#home',.5,{scale:.9});
@@ -211,6 +215,12 @@ new Swiper('#projects .swiper-container', {
       gsap.from('.contact-opacity',1,{opacity:0,delay:1.6,stagger:.2})
     })
      $('.home-link').on('click',function(){
+      document.getElementById("project-link-tentacion").style.pointerEvents = "none";
+      document.getElementById("project-link-oasis").style.pointerEvents = "none";
+      document.getElementById("project-link-a-medias-verdades").style.pointerEvents = "none";
+      document.getElementById("project-link-doscientos").style.pointerEvents = "none";
+
+
       gsap.to('.city-project',.5,{scale:.9});
       gsap.to('.city-project',0,{width:'100%',height:'100vh',overflow:'hidden'});
       gsap.to('.city-project',0,{display:'none',delay:.7});
@@ -232,6 +242,15 @@ new Swiper('#projects .swiper-container', {
       gsap.to('#home',.5,{scale:1,delay:1.1})
       gsap.to('#breaker',{display:'block'})
       gsap.to('#breaker',0,{display:'none',delay:1.7});
+
+
+      setTimeout(() => {
+        document.getElementById("navigation-close").style.pointerEvents = "all"
+        document.getElementById("project-link-tentacion").style.pointerEvents = "all";
+        document.getElementById("project-link-oasis").style.pointerEvents = "all";
+        document.getElementById("project-link-a-medias-verdades").style.pointerEvents = "all";
+        document.getElementById("project-link-doscientos").style.pointerEvents = "all";
+       }, 2000);
     })
     $('.marine-project-link').on('click',function(){
       gsap.to('#home',.5,{scale:.9});
@@ -274,6 +293,12 @@ new Swiper('#projects .swiper-container', {
       gsap.to('#breaker',0,{display:'none',delay:1.7});
     })
      $('.about-close').on('click',function(){
+
+      document.getElementById("project-link-tentacion").style.pointerEvents = "none";
+      document.getElementById("project-link-oasis").style.pointerEvents = "none";
+      document.getElementById("project-link-a-medias-verdades").style.pointerEvents = "none";
+      document.getElementById("project-link-doscientos").style.pointerEvents = "none";
+      
       gsap.to('#about',.5,{scale:.9});
       gsap.to('#about',0,{width:'100%',height:'100vh',overflow:'hidden'});
       gsap.to('#about',0,{display:'none',delay:.7});
@@ -281,6 +306,14 @@ new Swiper('#projects .swiper-container', {
       gsap.to('#home',.5,{scale:1,delay:1.1})
       gsap.to('#breaker',{display:'block'})
       gsap.to('#breaker',0,{display:'none',delay:1.7});
+
+      setTimeout(() => {
+        document.getElementById("navigation-close").style.pointerEvents = "all"
+        document.getElementById("project-link-tentacion").style.pointerEvents = "all";
+        document.getElementById("project-link-oasis").style.pointerEvents = "all";
+        document.getElementById("project-link-a-medias-verdades").style.pointerEvents = "all";
+        document.getElementById("project-link-doscientos").style.pointerEvents = "all";
+       }, 2000);
     })
     $('.contact-close').on('click',function(){
       gsap.to('#contact',.5,{scale:.9});

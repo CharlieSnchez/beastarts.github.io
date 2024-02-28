@@ -366,7 +366,7 @@ mix-blend-mode: luminosity;
   width: 100%;
   height:100%;
   background: #000000;
-  opacity: .5;
+  opacity: .8;
 }
 
 #breaker{
@@ -682,7 +682,7 @@ mix-blend-mode: luminosity;
 
 .about-text-button.about{
   position:relative;
-  width: 100% !important;
+  width: 95% !important;
   left: 0;
   text-align: center;
   pointer-events: all !important;
@@ -809,7 +809,7 @@ z-index: 2;
   padding-left: 50px;
   padding-right: 50px;
   cursor: none;
-
+  pointer-events: all !important;
 }
 .marine-project,.forest-project,.wildlife-project,.city-project,.video-project{
   display: none;
@@ -931,7 +931,7 @@ z-index: 5;
 .contact-header{
   height: auto;
   padding:40px;
-  padding-top: 120px;
+  padding-top: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1388,6 +1388,7 @@ FOR TABLETS
   padding:100px;
   padding-left: 100px;
   padding-right: 100px;
+  pointer-events: all !important;
 }
 
 .gg-mouse {
@@ -1593,12 +1594,14 @@ FOR TABLETS
   font-size: 24px !important;
   left: -5% !important;
   opacity: 100%;
-  mix-blend-mode: none !important;
+
+  mix-blend-mode: initial !important;
 }
+
 .about-text-paragraph.about{
   margin-left: -5% !important;
   font-size: 20px;
-  mix-blend-mode: unset !important;
+  color: #ffffff;
 }
 
 .about-text-button.about{
@@ -1658,6 +1661,7 @@ FOR MOBILES
   padding:40px;
   padding-left: 40px;
   padding-right: 40px;
+  pointer-events: all !important;
 }
 .slider-controls{
   left: 30%;
@@ -1718,10 +1722,12 @@ display: none;
 
 .about-text-button.tentacion{
   position:fixed;
-  top: 14.7vh !important;
+  top: 11.3vh !important;
   text-align: right;
-  
+  width: 5% !important;
+  align-items: right;
   padding-right: 10vw !important;
+  padding-left: 70vw !important;
   font-size: 18px !important;
 
   pointer-events: all !important;
@@ -1890,6 +1896,36 @@ display: none;
 
 
 
+.about-text-header.about-2{
+  font-size: 24px !important;
+  left: -5% !important;
+  opacity: 100%;
+
+  mix-blend-mode: initial !important;
+}
+
+.about-text-paragraph.about{
+  margin-left: -5% !important;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.about-text-button.about{
+  position:relative;
+  width: 90% !important;
+  left: 0;
+  color: rgb(255, 123, 0) !important;
+  text-align: center;
+  pointer-events: all !important;
+}
+
+
+#about .social-media-links {
+  right:10%;
+}
+
+
+
 
 .navigation-close-line{
   height: 16px;
@@ -1936,7 +1972,7 @@ display: none;
 }
 .contact-header{
   padding:10px;
-  padding-top: 80px;
+  padding-top: 140px;
   font-size: 24px;
 }
 
@@ -1976,6 +2012,7 @@ FOR EXTRA SMALL DEVICES
     padding:20px;
     padding-left: 20px;
     padding-right: 20px;
+    pointer-events: all !important;
   }
   .navigation-links{
     padding-right: 0px;
@@ -2032,16 +2069,19 @@ FOR EXTRA SMALL DEVICES
     left: 10vw !important;
     margin-right: 40vw;
   
-    font-size: 20px;
+    font-size: 18px;
+    width: 50% !important;
   }
   
   .about-text-button.tentacion{
     position:fixed;
-    top: 12.7vh !important;
+    top: 6.7vh !important;
     text-align: right;
-    
+    width: 3% !important;
+    align-items: right;
     padding-right: 10vw !important;
-    font-size: 18px !important;
+    padding-left: 55vw !important;
+    font-size: 12px !important;
   
     pointer-events: all !important;
   }
@@ -2050,9 +2090,9 @@ FOR EXTRA SMALL DEVICES
     position: fixed !important;
     left: 10vw !important;
     width: 80%;
-    top: 26vh !important;
+    top: 28vh !important;
   
-    font-size: 16px;
+    font-size: 13.5px;
     height: 145px;
     }
 
@@ -2062,22 +2102,26 @@ FOR EXTRA SMALL DEVICES
     width: 80%;
   
   
-    font-size: 16px;
+    font-size: 13.5px;
     bottom: 12vh !important;
     margin-right: 10vw !important;
   }
 
   .youtube-video.tentacion{
-    margin-top: 37% !important;
+    margin-top: 39% !important;
     height: 23vh;
     pointer-events: all !important;
+  }
+
+  #tentacion-slides{
+    margin-top: 21% !important;
   }
 
 
   .about-text-header.oasis{
     display: block;
     position: fixed !important;
-    top: 14vh !important;
+    top: 15vh !important;
     left: 10vw !important;
     margin-right: 40vw;
     width: 80% !important;
@@ -2101,9 +2145,9 @@ FOR EXTRA SMALL DEVICES
     position: fixed !important;
     left: 10vw !important;
     width: 80% !important;
-    top: 23vh !important;
+    top: 25vh !important;
   
-    font-size: 16px;
+    font-size: 13.5px;
     opacity: .9;
   }
   .about-text-paragraph.oasis-2{
@@ -2112,8 +2156,8 @@ FOR EXTRA SMALL DEVICES
     width: 80%;
   
   
-    font-size: 16px;
-    bottom: 12.5vh !important;
+    font-size: 13.5px;
+    bottom: 15vh !important;
     margin-right: 10vw !important;
   }
 
@@ -2130,12 +2174,12 @@ FOR EXTRA SMALL DEVICES
   .about-text-header.a-medias-verdades{
     display: block;
     position: fixed !important;
-    top: 10vh !important;
+    top: 11.7vh !important;
     left: 10vw !important;
     width: 70% !important;
     margin-right: 40vw;
   
-    font-size: 20px;
+    font-size: 16px;
   
   }
   
@@ -2157,7 +2201,7 @@ FOR EXTRA SMALL DEVICES
   
   
     font-size: 20px;
-    top: 31vh !important;
+    top: 26vh !important;
     margin-right: 10vw !important;
     font-size: 16px;
     text-align: left !important;
@@ -2169,7 +2213,7 @@ FOR EXTRA SMALL DEVICES
   
   
     font-size: 20px;
-    top: 67vh !important;
+    top: 62vh !important;
     margin-right: 10vw !important;
     font-size: 16px;
     text-align: left !important;
@@ -2190,6 +2234,14 @@ FOR EXTRA SMALL DEVICES
   }
 
 
+  .wildlife-slides{
+    margin-top: -5.5vh;
+  }
+
+
+  .city-slides{
+    margin-top: -1.5vh;
+  }
 
 
   .about-text-header.doscientos{
@@ -2234,6 +2286,48 @@ FOR EXTRA SMALL DEVICES
   }
 
 
+  .about-text-header.about-2{
+    font-size: 15px !important;
+    left: -5% !important;
+    opacity: 100%;
+    line-height: 17px !important;
+    margin-top: -20px;
+    margin-bottom: 6px;
+    mix-blend-mode: initial !important;
+  }
+  
+  .about-text-paragraph.about{
+    margin-left: -5% !important;
+    font-size: 13.5px;
+    margin-top: 2px !important;
+    color: #ffffff;
+    width: 95%;
+  }
+  
+  .about-text-button.about{
+    position:relative;
+    width: 90% !important;
+    left: 0;
+    color: rgb(255, 123, 0) !important;
+    text-align: center;
+    pointer-events: all !important;
+    font-size: 13.5px;
+    margin-top: -30px;
+  }
+
+  .about-content{
+    margin-top: 2.4vh !important;
+  }
+  
+  
+  #about .social-media-links {
+    right:20%;
+  }
+
+  .links{
+    padding-left: 5px;
+    margin-right: 10px;
+  }
 
 
 
@@ -2287,7 +2381,7 @@ FOR EXTRA SMALL DEVICES
 }
 .contact-header{
   padding:10px;
-  padding-top: 80px;
+  padding-top: 120px;
   font-size: 18px;
 }
 input{
